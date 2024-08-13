@@ -10,10 +10,12 @@ while res != 4:
     if res < 1 or res > 5:
         print('Resposta inválida.')
         continue
+    #SAÍDA DO PROGRAMA
     elif res == 4:
         print('Você escolheu \033[1;31msair\033[m do trivia.')
         print('Volte novamente! =^)')
         break
+    #CRÉDITOS
     elif res == 5:
         print('='*43)
         print('Criador: Yuri Teixeira, da turma de info1m.\nData de criação: 12/08/24\nAproveite o quiz! =D')
@@ -30,9 +32,11 @@ while res != 4:
         while gabarito not in letras:
             print('Resposta \033[1;33mINVÁLIDA\033[m!')
             gabarito = input(' ').lower()
+        #Define a resposta correta.
         if gabarito == 'd':
             print('Resposta \033[1;32mCERTA\033[m!')
             acerto += 1
+        #Checa se a resposta está dentro das opções válidas e, caso não bater com a resposta certa, será tida como errada.
         elif gabarito != 'd' and gabarito in letras:
             print('Resposta \033[1;31mERRADA\033[m!')
         print('Qual dos números abaixo \033[1;33mNÃO\033[m é primo?')
@@ -72,6 +76,7 @@ while res != 4:
         #Pega o número de acertos, divide pelo número de questões e multiplica por 100 para obter a porcentagem de acertos.
         print('FIM!')
         print(f'Você acertou {acertoPor100}% do trivia!')
+        #A estrutrura do programa periste a mesma pelos outros temas.
     #BIOLOGIA
     elif res == 2:
         acerto = 0
