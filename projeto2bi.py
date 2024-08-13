@@ -3,26 +3,27 @@
 res = acerto = 0
 gabarito = ''
 letras = 'abcd'
+num = '12345'
 while res != 4:
     print('Digite 1 para o trivia de matemática,\n2 para o trivia de biologia,\n3 para o trivia de programação\n4 para sair e\n5 para os créditos.')
     res = int(input())
     #Recebe a escolha do quiz
-    if res < 1 or res > 5:
+    if res not in num:
         print('Resposta inválida.')
         continue
     #SAÍDA DO PROGRAMA
-    elif res == 4:
+    elif res == '4':
         print('Você escolheu \033[1;31msair\033[m do trivia.')
         print('Volte novamente! =^)')
         break
     #CRÉDITOS
-    elif res == 5:
+    elif res == '5':
         print('='*43)
         print('Criador: Yuri Teixeira, da turma de info1m.\nData de criação: 12/08/24\nAproveite o quiz! =D')
         print('='*43)
         continue
     #MATEMÁTICA
-    elif res == 1:
+    elif res == '1':
         acerto = 0
         print('\033[1;32mEntrando\033[m no trivia de matemática...')
         print('Qual dessas opções apresenta o teorema de pitágoras?')
@@ -78,7 +79,7 @@ while res != 4:
         print(f'Você acertou {acertoPor100}% do trivia!')
         #A estrutrura do programa periste a mesma pelos outros temas.
     #BIOLOGIA
-    elif res == 2:
+    elif res == '2':
         acerto = 0
         print('\033[1;32mEntrando\033[m no trivia de biologia...')
         print('Em qual órgão o sistema muscular atua com movimentos involuntários?')
@@ -129,7 +130,7 @@ while res != 4:
         print('FIM!')
         print(f'Você acertou {acertoPor100}% do trivia!')
     #PROGRAMAÇÃO
-    elif res == 3:
+    elif res == '3':
         acerto = 0
         print('\033[1;32mEntrando\033[m no trivia de programação...')
         print('Qual das opções \033[1;33mNÃO\033[m apresenta um pilar da programação?')
