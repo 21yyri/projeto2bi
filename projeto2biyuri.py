@@ -4,15 +4,21 @@ res = acerto = 0
 gabarito = ''
 letras = 'abcd'
 while res != 4:
-    print('Digite 1 para o trivia de matemática,\n2 para o trivia de biologia,\n3 para o trivia de programação e\n4 para sair.')
+    print('Digite 1 para o trivia de matemática,\n2 para o trivia de biologia,\n3 para o trivia de programação\n4 para sair e\n5 para os créditos.')
     res = int(input())
     #Recebe a escolha do quiz
-    if res < 1 or res > 4:
+    if res < 1 or res > 5:
         print('Resposta inválida.')
         continue
     elif res == 4:
-        print('Você escolheu sair do trivia.')
+        print('Você escolheu \033[1;31msair\033[m do trivia.')
+        print('Volte novamente! =^)')
         break
+    elif res == 5:
+        print('='*43)
+        print('Criador: Yuri Teixeira, da turma de info1m.\nData de criação: 13/08/24\nAproveite o quiz! =D')
+        print('='*43)
+        continue
     elif res == 1:
         acerto = 0
         print('Entrando no trivia de matemática...')
@@ -118,7 +124,7 @@ while res != 4:
     elif res == 3:
         acerto = 0
         print('Entrando no trivia de programação...')
-        print('Qual das opções \033[1;32mNÃO\033[m apresenta um pilar da programação?')
+        print('Qual das opções \033[1;33mNÃO\033[m apresenta um pilar da programação?')
         print(' a) Algoritmo\n', 'b) Abstração\n', 'c) Instrução\n', 'd) Decomposição')
         gabarito = input().lower()
         while gabarito not in letras:
@@ -165,3 +171,4 @@ while res != 4:
         acertoPor100 = (acerto / 4) * 100
         print('FIM!')
         print(f'Você acertou {acertoPor100}% do trivia!')
+        
