@@ -16,7 +16,7 @@ while res != 4:
         break
     elif res == 5:
         print('='*43)
-        print('Criador: Yuri Teixeira, da turma de info1m.\nData de criação: 13/08/24\nAproveite o quiz! =D')
+        print('Criador: Yuri Teixeira, da turma de info1m.\nData de criação: 12/08/24\nAproveite o quiz! =D')
         print('='*43)
         continue
     #MATEMÁTICA
