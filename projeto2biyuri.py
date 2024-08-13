@@ -24,7 +24,7 @@ while res != 4:
     #MATEMÁTICA
     elif res == 1:
         acerto = 0
-        print('\033[1;32mEntrando\033m no trivia de matemática...')
+        print('\033[1;32mEntrando\033[m no trivia de matemática...')
         print('Qual dessas opções apresenta o teorema de pitágoras?')
         print(' a) b^2 - 4×a×c\n', 'b) b×h / 2\n', 'c) C×I×T \n', 'd) a^2 + b^2 = c^2')
         gabarito = input().lower()
