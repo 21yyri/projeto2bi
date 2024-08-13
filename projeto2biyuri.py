@@ -19,9 +19,10 @@ while res != 4:
         print('Criador: Yuri Teixeira, da turma de info1m.\nData de criação: 13/08/24\nAproveite o quiz! =D')
         print('='*43)
         continue
+    #MATEMÁTICA
     elif res == 1:
         acerto = 0
-        print('Entrando no trivia de matemática...')
+        print('\033[1;32mEntrando\033m no trivia de matemática...')
         print('Qual dessas opções apresenta o teorema de pitágoras?')
         print(' a) b^2 - 4×a×c\n', 'b) b×h / 2\n', 'c) C×I×T \n', 'd) a^2 + b^2 = c^2')
         gabarito = input().lower()
@@ -71,9 +72,10 @@ while res != 4:
         #Pega o número de acertos, divide pelo número de questões e multiplica por 100 para obter a porcentagem de acertos.
         print('FIM!')
         print(f'Você acertou {acertoPor100}% do trivia!')
+    #BIOLOGIA
     elif res == 2:
         acerto = 0
-        print('Entrando no trivia de biologia...')
+        print('\033[1;32mEntrando\033[m no trivia de biologia...')
         print('Em qual órgão o sistema muscular atua com movimentos involuntários?')
         print(' a) Cérebro\n', 'b) Rins\n', 'c) Artérias\n', 'd) Coração')
         gabarito = input().lower()
@@ -121,9 +123,10 @@ while res != 4:
         acertoPor100 = (acerto / 4) * 100
         print('FIM!')
         print(f'Você acertou {acertoPor100}% do trivia!')
+    #PROGRAMAÇÃO
     elif res == 3:
         acerto = 0
-        print('Entrando no trivia de programação...')
+        print('\033[1;32mEntrando\033[m no trivia de programação...')
         print('Qual das opções \033[1;33mNÃO\033[m apresenta um pilar da programação?')
         print(' a) Algoritmo\n', 'b) Abstração\n', 'c) Instrução\n', 'd) Decomposição')
         gabarito = input().lower()
