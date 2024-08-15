@@ -4,12 +4,12 @@ res = acerto = 0
 gabarito = ''
 letras = 'abcd'
 num = '12345'
-while res != 4:
+while res != '4':
     print('Digite 1 para o trivia de matemática,\n2 para o trivia de biologia,\n3 para o trivia de programação\n4 para sair e\n5 para os créditos.')
-    res = int(input())
+    res = input()
     #Recebe a escolha do quiz
     if res not in num:
-        print('Resposta inválida.')
+        print('Resposta \033[1;33minválida\033[m.')
         continue
     #SAÍDA DO PROGRAMA
     elif res == '4':
